@@ -1,0 +1,108 @@
+.chapterCard {
+  margin-bottom: 2rem;
+}
+
+.card {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background: var(--ifm-card-background-color, #fff);
+  border: 1px solid var(--ifm-card-border-color, #dee2e6);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.cardHeader {
+  padding: 1.5rem 1.5rem 0.5rem;
+  border-bottom: 1px solid var(--ifm-card-border-color, #dee2e6);
+}
+
+.cardTitle {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.cardTitle a {
+  color: var(--ifm-heading-color);
+  text-decoration: none;
+}
+
+.cardTitle a:hover {
+  color: var(--ifm-color-primary);
+}
+
+.partTag {
+  display: inline-block;
+  background: var(--ifm-color-primary);
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
+.cardBody {
+  padding: 1.5rem;
+  flex-grow: 1;
+}
+
+.description {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  color: var(--ifm-font-color-base);
+}
+
+.whyRead {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--ifm-card-border-color, #dee2e6);
+}
+
+.whyRead h4 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1rem;
+  color: var(--ifm-color-primary);
+  font-weight: 600;
+}
+
+.learningObjectives h4 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1rem;
+  color: var(--ifm-color-primary);
+  font-weight: 600;
+}
+
+.whyRead p, 
+.learningObjectives p {
+  margin: 0 0 0.5rem 0;
+  line-height: 1.6;
+}
+
+.learningObjectives ul {
+  margin: 0;
+  padding-left: 1.25rem;
+  line-height: 1.6;
+}
+
+.learningObjectives li {
+  margin-bottom: 0.25rem;
+}
+
+.cardFooter {
+  padding: 0 1.5rem 1.5rem;
+  text-align: center;
+}
+
+.cardFooter .button {
+  width: 100%;
+  max-width: 200px;
+}

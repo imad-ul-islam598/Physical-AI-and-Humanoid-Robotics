@@ -1,0 +1,336 @@
+/**
+ * Custom CSS for the Physical AI and Humanoid Robotics textbook
+ * Enhancing the default Docusaurus styling for better readability and aesthetics
+ */
+
+/* You can override the default Docusaurus variables here. */
+:root {
+  --ifm-color-primary: #2563eb;
+  --ifm-color-primary-dark: #1d4ed8;
+  --ifm-color-primary-darker: #1a47c2;
+  --ifm-color-primary-darkest: #153aa0;
+  --ifm-color-primary-light: #3b82f6;
+  --ifm-color-primary-lighter: #4f94f9;
+  --ifm-color-primary-lightest: #63a7fb;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-container-width-xl: 1600px;
+}
+
+/* Dark mode colors */
+[data-theme='dark'] {
+  --ifm-color-primary: #3b82f6;
+  --ifm-color-primary-dark: #2563eb;
+  --ifm-color-primary-darker: #1d4ed8;
+  --ifm-color-primary-darkest: #1e40af;
+  --ifm-color-primary-light: #60a5fa;
+  --ifm-color-primary-lighter: #93c5fd;
+  --ifm-color-primary-lightest: #bfdbfe;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* Custom styles for the Physical AI and Humanoid Robotics textbook */
+
+/* Improved typography for better readability */
+.markdown h1,
+.markdown h2,
+.markdown h3,
+.markdown h4,
+.markdown h5,
+.markdown h6 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+.markdown h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--ifm-color-emphasis-300);
+}
+
+.markdown h2 {
+  font-size: 2rem;
+  margin-top: 2rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid var(--ifm-color-emphasis-300);
+}
+
+.markdown h3 {
+  font-size: 1.5rem;
+  margin-top: 1.8rem;
+}
+
+/* Enhanced code block styling */
+.codeBlockContainer_node_modules-\@docusaurus-theme-classic-lib-theme-CodeBlock-Content-styles-module {
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+/* Improved blockquotes for tips and warnings */
+.markdown blockquote {
+  border-left: 4px solid var(--ifm-color-primary);
+  background-color: var(--ifm-color-emphasis-100);
+  border-radius: 0 8px 8px 0;
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+}
+
+/* Better list styling */
+.markdown ul,
+.markdown ol {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+
+.markdown li {
+  margin-bottom: 0.5rem;
+}
+
+.markdown li p {
+  margin: 0.5rem 0;
+}
+
+/* Enhanced table styling */
+.markdown table {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  overflow-x: auto;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.markdown table th,
+.markdown table td {
+  padding: 0.75rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  text-align: left;
+}
+
+.markdown table th {
+  background-color: var(--ifm-color-emphasis-100);
+  font-weight: 600;
+}
+
+/* Improved sidebar navigation */
+.menu__list-item-collapsible .menu__list-item-collapsible {
+  padding-left: 0.5rem;
+}
+
+/* Custom styling for chapter sections */
+.chapter-section {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  border-radius: 8px;
+  background-color: var(--ifm-color-emphasis-100);
+}
+
+.chapter-section h3 {
+  color: var(--ifm-color-primary);
+  margin-top: 0;
+}
+
+/* Highlighted text for key concepts */
+.key-concept {
+  background-color: rgba(59, 130, 246, 0.1);
+  border-left: 4px solid var(--ifm-color-primary);
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+  border-radius: 0 8px 8px 0;
+}
+
+/* Exercise styling */
+.exercise-box {
+  border: 2px dashed var(--ifm-color-primary);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  background-color: rgba(59, 130, 246, 0.03);
+}
+
+.exercise-title {
+  font-weight: bold;
+  color: var(--ifm-color-primary);
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.exercise-title::before {
+  content: "📝";
+  margin-right: 0.5rem;
+  font-size: 1.2em;
+}
+
+/* Diagram containers */
+.diagram-container {
+  background-color: var(--ifm-color-emphasis-100);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  overflow-x: auto;
+  font-family: monospace;
+  white-space: pre;
+  line-height: 1.4;
+}
+
+.diagram-title {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: var(--ifm-color-emphasis-800);
+}
+
+/* Code examples styling */
+.code-example {
+  margin: 1.5rem 0;
+}
+
+.code-example-title {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: var(--ifm-color-emphasis-800);
+  display: flex;
+  align-items: center;
+}
+
+.code-example-title::before {
+  content: "💻";
+  margin-right: 0.5rem;
+}
+
+/* Summary section styling */
+.summary-box {
+  border: 2px solid var(--ifm-color-primary-light);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  background-color: rgba(59, 130, 246, 0.05);
+}
+
+.summary-title {
+  font-weight: bold;
+  color: var(--ifm-color-primary-darker);
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+/* Improved navigation buttons */
+.pagination-nav__item {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.pagination-nav__link {
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+/* Custom styling for the home page */
+.hero--primary {
+  background: linear-gradient(135deg, #1e3a8a 0%, #1d4ed8 100%);
+  color: white;
+}
+
+.hero__title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.hero__subtitle {
+  font-size: 1.25rem;
+  opacity: 0.9;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+}
+
+/* Homepage module cards */
+.modules-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin: 3rem 0;
+}
+
+.module-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.module-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.module-card h3 {
+  color: var(--ifm-color-primary);
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+}
+
+.module-card h3::before {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: var(--ifm-color-primary);
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 32px;
+  margin-right: 0.75rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.module-card.part-1 h3::before { content: '1'; }
+.module-card.part-2 h3::before { content: '2'; }
+.module-card.part-3 h3::before { content: '3'; }
+.module-card.part-4 h3::before { content: '4'; }
+.module-card.part-5 h3::before { content: '5'; }
+.module-card.part-6 h3::before { content: '6'; }
+.module-card.part-7 h3::before { content: '7'; }
+
+.module-card ul {
+  padding-left: 1.5rem;
+  margin-bottom: 0;
+}
+
+.module-card li {
+  margin-bottom: 0.25rem;
+}
+
+/* Footer enhancements */
+.footer--dark {
+  background-color: #1e293b;
+}
+
+/* Responsive adjustments */
+@media (max-width: 996px) {
+  .hero__title {
+    font-size: 2.5rem;
+  }
+
+  .modules-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero__title {
+    font-size: 2rem;
+  }
+
+  .hero__subtitle {
+    font-size: 1.1rem;
+  }
+}

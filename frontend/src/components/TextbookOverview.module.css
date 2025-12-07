@@ -1,0 +1,73 @@
+.textbookOverview {
+  padding: 3rem 0;
+  background-color: var(--ifm-background-surface-color);
+}
+
+.textbookOverview h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: var(--ifm-heading-color);
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--ifm-font-color-secondary);
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  line-height: 1.6;
+}
+
+.featureCard {
+  background: var(--ifm-card-background-color, #fff);
+  border-radius: 8px;
+  padding: 2rem;
+  height: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--ifm-card-border-color, #dee2e6);
+}
+
+.featureCard h3 {
+  color: var(--ifm-color-primary);
+  margin-bottom: 1rem;
+}
+
+.featureCard p {
+  line-height: 1.6;
+  color: var(--ifm-font-color-base);
+}
+
+.whoShouldRead {
+  margin-top: 3rem;
+  padding: 2rem;
+  background: var(--ifm-card-background-color, #fff);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--ifm-card-border-color, #dee2e6);
+}
+
+.whoShouldRead h3 {
+  color: var(--ifm-color-primary);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.whoShouldRead ul {
+  padding-left: 1.5rem;
+  line-height: 1.8;
+}
+
+.whoShouldRead li {
+  margin-bottom: 0.75rem;
+}
+
+@media screen and (max-width: 996px) {
+  .featureCard {
+    margin-bottom: 1.5rem;
+  }
+  
+  .subtitle {
+    padding: 0 1rem;
+  }
+}

@@ -1,55 +1,40 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+# Physical AI and Humanoid Robotics Textbook Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. Writing Style
+Clear, structured, and technically accurate content that prioritizes beginner-friendly explanations before deeper technical content. Maintain an academic tone with no marketing language, using short sentences and clean formatting throughout.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### II. Audience Focus
+Content is designed for students aged 16+, early engineering learners, and robotics beginners who possess basic Python knowledge. All materials must be accessible to this target audience.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### III. Formatting Standards
+All content follows Docusaurus MDX format with headings up to level 4. Include Python, ROS 2, and C++ code blocks when needed, along with diagrams described in text, tables, bullets, and summaries. Every chapter must follow the prescribed template.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### IV. Docusaurus Framework
+The project must be initialized using `npx create-docusaurus@latest frontend classic` command. Do not generate folder structures manually.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### V. Chapter Template Compliance
+Every chapter must contain: Introduction, Learning Objectives, Key Concepts, Technical Explanation, Diagrams written as text descriptions, Code Examples, Exercises, and Summary.
 
-### [PRINCIPLE_6_NAME]
+### VI. Quality Standards
+No hallucinated technology is allowed. All examples must be technically accurate and runnable. Maintain consistent depth across chapters to ensure educational coherence.
 
+## Book Structure
 
-[PRINCIPLE__DESCRIPTION]
+The textbook is organized into 7 parts with 19 chapters covering:
+1. Foundations of Physical AI (3 chapters)
+2. ROS 2, the Robotic Nervous System (3 chapters)
+3. Digital Twins with Gazebo and Unity (3 chapters)
+4. NVIDIA Isaac Platform (3 chapters)
+5. Vision Language Action (VLA) (3 chapters)
+6. Humanoid Robot Engineering (3 chapters)
+7. Capstone Project (1 chapter)
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
-
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
-
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
-
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+## Content Standards
+All content must be technically accurate and runnable. No fabricated or non-existent technology should be presented as real. Maintain consistent depth across all chapters.
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
+This constitution governs all development of the Physical AI and Humanoid Robotics textbook. All content must comply with these standards. Amendments require proper documentation and approval.
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
-
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.0.0 | **Ratified**: 2025-12-06 | **Last Amended**: 2025-12-06
