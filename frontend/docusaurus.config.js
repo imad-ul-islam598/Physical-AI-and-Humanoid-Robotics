@@ -21,7 +21,7 @@ const config = {
   },
 
   // Set the production url of your site here
-  url: "https://physical-ai-humanoid-robotics-book.vercel.app",
+  url: "https://physical-ai-humanoid-robotics-textbook-imad.vercel.app",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/",
@@ -81,7 +81,7 @@ const config = {
       },
       footer: {
         style: "dark",
-        copyright: `Copyright © ${new Date().getFullYear()} Physical AI and Humanoid Robotics Textbook. Built by Imad ul Islam`,
+        copyright: `Copyright © ${new Date().getFullYear()} Physical AI and Humanoid Robotics Textbook. Built by <strong>Imad ul Islam</strong>`,
       },
       prism: {
         theme: prismThemes.github,
