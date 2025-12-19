@@ -7,6 +7,7 @@ import ChaptersGrid from '@site/src/components/ChaptersGrid';
 
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
+import ChatBot from '../components/Chatbot';
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
@@ -37,6 +38,7 @@ export default function Home() {
       description="A comprehensive textbook on embodied artificial intelligence and humanoid robotics">
       <HomepageHeader />
       <main>
+        <ChatBot/>
         <TextbookOverview />
         <ChaptersGrid />
       </main>

@@ -1,0 +1,191 @@
+/* Floating Chat Button */
+.chatToggle {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: var(--ifm-color-emphasis-200);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 9999;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  border: 1px solid var(--ifm-color-primary);
+}
+
+.chatIcon {
+  width: 32px;
+  height: 32px;
+}
+
+/* Notification Badge */
+.notificationBadge {
+  position: absolute;
+  top: -2.1rem;
+  right: -.5rem;
+  background: var(--ifm-background-surface-color);
+  color: var(--ifm-color-primary);
+  font-size: 1rem;
+  font-weight: bold;
+  padding: .5rem 1rem;
+  border-radius: 12px;
+  animation: blink 2.5s infinite;
+  -webkit-animation: blink 2.5s infinite;
+}
+
+@keyframes blink {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0; }
+}
+
+/* Tooltip */
+.tooltip {
+  position: absolute;
+  top: -40px;
+  transform: translateX(-30%);
+  background:  var(--ifm-background-surface-color);
+  color: var(--ifm-color-primary);
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  white-space: nowrap;
+  animation: blink 2.5s infinite;
+  pointer-events: none;
+  -webkit-animation: blink 2.5s infinite;
+  -webkit-transform: translateX(-30%);
+  -moz-transform: translateX(-30%);
+  -ms-transform: translateX(-30%);
+  -o-transform: translateX(-30%);
+}
+
+.tooltiparrow {
+  position: absolute;
+  bottom: -4px;
+  left: 80%;
+  width: 8px;
+  height: 8px;
+  background:  var(--ifm-background-surface-color);
+  transform: translateX(-50%) rotate(45deg);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Blink animation */
+@keyframes blink {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0; }
+}
+
+
+/* Chat Panel */
+.chatPanel {
+  position: fixed;
+  bottom: 100px;
+  right: 24px;
+  width: 380px;
+  max-height: 600px;
+  background: var(--ifm-background-surface-color);
+  border-radius: 12px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+  z-index: 9999;
+}
+
+/* Header */
+.chatHeader {
+  padding: 12px;
+  font-weight: 600;
+  background: var(--ifm-color-primary);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.closeButton {
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Messages */
+.chatMessages {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.userMessage {
+  align-self: flex-end;
+  background: var(--ifm-color-primary);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 10px;
+  margin-bottom: 8px;
+  max-width: 80%;
+}
+
+.botMessage {
+  align-self: flex-start;
+  background: var(--ifm-color-emphasis-200);
+  padding: 8px 12px;
+  border-radius: 10px;
+  margin-bottom: 8px;
+  max-width: 80%;
+}
+
+/* Form */
+.chatForm {
+  display: flex;
+  border-top: 1px solid var(--ifm-color-emphasis-300);
+}
+
+.chatForm input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.chatForm button {
+  padding: 0 16px;
+  border: none;
+  background: var(--ifm-color-primary);
+  color: white;
+  cursor: pointer;
+}
+
+/* Add these styles to your existing CSS file */
+
+.streaming {
+    border-left: 3px solid var(--ifm-color-primary);
+    background: linear-gradient(90deg, rgba(102, 126, 234, 0.05) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.streamingCursor {
+    display: inline-block;
+    animation: blinkCursor 1s infinite;
+    margin-left: 2px;
+    color: var(--ifm-color-emphasis-200);
+    -webkit-animation: blinkCursor 1s infinite;
+}
+
+@keyframes blinkCursor {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+}
+
+.botMessage {
+    position: relative;
+    transition: all 0.3s ease;
+}

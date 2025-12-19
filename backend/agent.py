@@ -3,7 +3,6 @@ import asyncio
 from dotenv import load_dotenv
 from fastapi import FastAPI, Request
 from fastapi.responses import HTMLResponse, JSONResponse, StreamingResponse
-from fastapi.templating import Jinja2Templates
 from qdrant_client import QdrantClient
 from sentence_transformers import SentenceTransformer
 from agents import (
@@ -26,8 +25,6 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-templates = Jinja2Templates(directory="templates")
-
 embedder = SentenceTransformer("all-MiniLM-L6-v2")
 
 qdrant = QdrantClient(
@@ -38,19 +35,19 @@ qdrant = QdrantClient(
 COLLECTION_NAME = os.getenv("COLLECTION_NAME")
 
 client = AsyncOpenAI(
-    api_key=os.getenv("OPEN_ROUTER_API_KEY"),
-    base_url=os.getenv("OPEN_ROUTER_BASE_URL"),
+    api_key=os.getenv("GEMINI_API_KEY"),
+    base_url=os.getenv("GEMINI_BASE_URL"),
 )
 
 model = OpenAIChatCompletionsModel(
-    model=os.getenv("OPEN_ROUTER_MODEL"),
+    model=os.getenv("GEMINI_MODEL"),
     openai_client=client,
 )
 
 agent = Agent(
-    name="Neuro Library Assistant",
+    name="Physical AI & Humanoid Robotics Assistant",
     instructions="""
-        You are the official assistant of Neuro Library, an AI-native learning platform. 
+        You are the official assistant of Physical AI & Humanoid Robotics, an AI-native learning platform. 
         Answer all user questions using only the provided book context. 
         If the user asks something casual like greetings, thanks, or small talk, respond in a friendly and engaging way and in short. 
         If the question cannot be answered from the book context, politely let the user know that the information is not in the books, 
@@ -93,11 +90,6 @@ async def query_book(question: str) -> str:
     )
 
     return result.final_output
-
-
-@app.get("/", response_class=HTMLResponse)
-async def home(request: Request):
-    return templates.TemplateResponse("chat.html", {"request": request})
 
 
 # Single streaming endpoint
